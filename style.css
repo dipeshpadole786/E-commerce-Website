@@ -1,0 +1,358 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(130deg, #970747 , rgb(100, 46, 27)) ;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    
+    
+    overflow: hidden;
+
+    
+
+
+    
+
+}
+header .heading_text a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    color: white;
+    margin-right: 25px;
+    
+}
+.heading_text{
+    margin-left: 20px;
+}
+header .heading_text a:hover{
+    border-bottom: 4px solid orchid;
+    transition: all 0.5s ease-in;
+}
+header .div_logo{
+    padding-right: 15px;
+}
+header .div_logo h2{
+    color: white;
+    font-size: 30px;
+}
+.main_content{
+    width: 100%;
+    height: 700px;
+    background-image: url("shopping-bag-cart.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    
+}
+.main_content .items{
+    position: relative;
+    top: 60px;
+    left: 150px;
+    height: 500px;
+    width: 470px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    backdrop-filter: blur(100%);
+    border: 5px solid black;
+    border-radius: 15px;
+    transform: translateX(-200px);
+    transition:all 1s ease;
+
+}
+.main_content .items.active{
+    transform: translateX(0px);
+
+}
+.main_content .items.bt_active{
+    transform: scale(0);
+}
+.main_content .items .first_item img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.main_content .side_bar{
+    width: 240px;
+    height: 550px;
+    background: transparent;
+    border-right: 2px solid gray;
+    margin-top: 60px;
+    transition: 0.5s ease;
+    
+    
+}
+.main_content .side_bar .bar_item{
+    height: 700px;
+    width: 235px;
+    border-radius: 2px;
+    padding: 3px;
+}
+.main_content .side_bar .bar_item .it{
+    padding: 2px;
+    height: 50px;
+    width: 220px;
+    display: flex;
+    padding-left: 10px;
+   
+    margin-top: 5px;
+    border-radius: 8px;
+
+}
+.side_bar{
+    transform: scale(0);
+}
+.side_bar.deactive{
+    transform: scale(0);
+}
+.side_bar.active{
+    transform: scale(1);
+}
+.it a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 3px;
+}
+.main_content .side_bar .bar_item .itt{
+    padding: 2px;
+    height: 50px;
+    width: 220px;
+    display: flex;
+   
+    
+    margin-top: 4px;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+.main_content .side_bar .bar_item .it a:hover{
+    text-decoration: underline;
+}
+.main_content .side_bar .bar_item .itt a:hover{
+    text-decoration: underline;
+}
+.itt a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 3px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 450px;
+    background: transparent;
+    background-size: cover;
+    background-position: center;
+    animation: animatedbag 5s linear infinite;
+    overflow: hidden;
+    position: absolute;
+    left: 500px;
+    top: 110px;
+}
+
+
+.login_form{
+    position: relative;
+    height: 450px;
+    width: 400px;
+    display: flex;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    transform: scale(0);
+    transition: 1s ease;
+}
+.login_form.active{
+    transform: scale(1);
+}
+#head{
+     font-size:2em;
+     color: black;
+     text-align: center;
+}
+.input_box{
+    width: 310px;
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+    
+}
+.input_box label{
+    position: relative;
+    top: -20px;
+    left: 4px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    color: black;
+    color: white;
+    transition: .5s;
+}
+
+.input_box input:focus~label,
+.input_box input:valid~label{
+    top: -55px;
+}
+
+.input_box input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    font-size: 1em;
+    padding-top: 30px;
+    padding-right: 40px;
+    color: black;
+}
+.input_box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+.remember_forgott{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.remember_forgott input{
+    margin: 3px;
+
+}
+.remember_forgott a{
+    text-decoration: none;
+    color: black;
+}
+.remember_forgott a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+}
+.footer{
+    margin: 25px 0 15px;
+    color: black;
+    text-align: center;
+}
+.footer p a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer p a:hover{
+    text-decoration: underline;
+}
+.item_box{
+    height: 2000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.item_box .product_box{
+    height: 1800px;
+    width: 870px;
+    background: linear-gradient(125deg, white, rgb(99, 99, 198));
+    margin: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 300px;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    transition: all 1s ease;
+    margin-top: 20px;
+    
+}
+.product_box.sideactive{
+    transform: translateX(-100px);
+}
+.product_box .box{
+    width: 400px;
+    height: 570px;
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 8px;
+    margin: 10px;
+    
+}
+.sidebar_2{
+    height: 740px;
+    width: 350px;
+    background: linear-gradient(125deg, rgb(231, 93, 116), red);
+    margin-left: 1150px;
+    border-radius: 15px;
+    border-left: 2px solid black ;
+    transform: scale(0);
+    transition: all 1s ease;
+    position: sticky;
+    top: 0;
+    margin-top: 20px;
+    margin-top: 20px;
+    padding-left: 25px;
+   
+
+}
+
+.sidebar_2.active{
+    transform: scale(1);
+}
+.fo{
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(125deg, rgb(122, 122, 217), rgb(34, 34, 81), rgb(14, 14, 46));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    padding: 180px;
+    margin-bottom: 0px;
+    bottom: 0;
+}
+.fo .first{
+    margin-top: 200px;
+    width: 150px;
+    height: 500px;
+    color: white;
+    font-size: 15px;
+    line-height: 25px;
+}
+.fo .first p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
